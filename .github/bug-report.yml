@@ -1,0 +1,61 @@
+name: 🐛 Bug Report
+description: Report a bug/issue
+labels: [needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hello! :sparkles: Here you can write the issue related to the problems that have occurred in any packages, especially originzero flow-runtime.
+        If you want to discuss that issue more detailed then you’ll get the fastest response by asking in [github discussions](https://github.com/originzero-io/originzero/discussions) or our [discord server](https://discord.gg/uRJUjWvH).
+        You can also search our [discussion page](https://github.com/originzero-io/originzero/discussions) to see if your problem has already been reported and you can add more context, or see if someone else has already solved your issue.
+
+        To help us understand the issue, please fill-in as much of the following information as you can:
+
+  - type: textarea
+    attributes:
+      label: Environment
+      description: Please tell us about your environment.
+      value: |
+        - Platform/OS:
+        - Node.js version:
+        - npm version:
+        - Typescript version: 
+        - Browser:
+        - Originzero version:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Bug Description
+      description: A clear & concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A clear & concise description of what you expected to happen.
+      placeholder: As a user, I expected ___ behavior, but instead I am seeing ___
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshots or Videos
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        Supported image/file types and file size limits- https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: Drag your video or image files inside of this editor
