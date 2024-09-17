@@ -1,0 +1,19 @@
+
+version: "3"
+services:
+    mongodb_service:
+        image: mongo:latest
+        restart: unless-stopped
+        volumes:
+          - executor_service-data:/data/db
+    executor_service:
+        image: flow_executor_service
+        ports:
+          - 8002:5003
+        depends_on: 
+          - mongodb_service
+        restart: unless-stopped
+        environment:
+          NODE_ENV: production
+volumes:
+  executor_service-data:

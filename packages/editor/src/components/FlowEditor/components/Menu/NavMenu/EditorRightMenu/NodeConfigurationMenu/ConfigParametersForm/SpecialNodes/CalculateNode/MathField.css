@@ -1,0 +1,25 @@
+.math-textbox {
+  font-size: 20px !important;
+  padding: 12px !important;
+  padding-left: 10px;
+  background-color: #262626;
+  border: 1px solid #3a3a3a !important;
+  color: #c1c1c1;
+  width: 100%;
+  min-height: 50px;
+  vertical-align: baseline;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.mq-math-mode * {
+  border-color: #c1c1c1 !important;
+  outline: none !important;
+}
+
+.mq-editable-field.mq-focused,
+.mq-math-mode .mq-editable-field.mq-focused {
+  border-radius: 6px !important;
+  border: 1px solid #43b104 !important;
+  outline: none !important;
+}

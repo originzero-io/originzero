@@ -1,0 +1,21 @@
+{
+  "name": "flowbuilder-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^8.1.8"
+  }
+}

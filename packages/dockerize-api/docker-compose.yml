@@ -1,0 +1,9 @@
+version: "2.0"
+services:
+  flow-executor:
+    container_name: my-custom-flow-executor
+    image: flow-executor-service
+    ports:
+      - 3001:3000
+  mongodb:
+    image: mongo

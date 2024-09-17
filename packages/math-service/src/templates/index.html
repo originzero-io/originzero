@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Node</title>
+</head>
+<body>
+    <h1>Calculator Node</h1>
+    <form method="POST" action="/" id="inputForm">
+        <label for="latex_code">Enter LaTeX expression:</label><br>
+        <input type="text" id="latex_code" name="latex_code"><br>
+        <br>
+        <div id="variableInputs"></div>  <!-- Div to hold variable inputs -->
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+    <hr>
+    {% if latex_code %}
+        <h3>Entered LaTeX expression:</h3>
+        <p>{{ latex_code }}</p>
+        <h3>Sympy Expression:</h3>
+        <p>{{ sympy_expression }}</p>
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+
+    <script>
+        document.getElementById('latex_code').addEventListener('input', function() {
+            let expression = this.value;
+            fetch('/get_variables', {
+                method: 'POST',
+                body: JSON.stringify({latex_code: expression}),
+                headers: {'Content-Type': 'application/json'}
+            })
+            .then(response => response.json())
+            .then(data => {
+                let variableInputs = document.getElementById('variableInputs');
+                variableInputs.innerHTML = '';  // Clear previous inputs
+                data.variable_list.forEach(variable => {
+                    if (variable !== 'e') {
+                        let label = document.createElement('label');
+                        label.for = variable;
+                        label.innerText = variable + ': ';
+                        let input = document.createElement('input');
+                        input.type = 'text';
+                        input.id = variable;
+                        input.name = variable;
+                        variableInputs.appendChild(label);
+                        variableInputs.appendChild(input);
+                        variableInputs.appendChild(document.createElement('br'));
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

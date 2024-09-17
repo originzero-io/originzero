@@ -1,0 +1,149 @@
+{
+  "flowId": "647dae1fde6fdf4fae1e907f",
+  "nodes": [
+    {
+      "id": "TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3d",
+      "type": "TRIGGER",
+      "data": {
+        "ioEngine": {
+          "targetCount": 0,
+          "sourceCount": 1,
+          "dynamicInput": false,
+          "dynamicOutput": false
+        },
+        "statusHandles": {
+          "inputs": { "enable": false, "disable": false, "clear": true },
+          "outputs": { "start": true, "end": false }
+        },
+        "configParameters": { "message": 5, "repeat: every x seconds": 3 },
+        "outputValues": { "trig": "any" },
+        "trigHandles": { "trig1": false, "trig2": true },
+        "triggerAttributes": "ignore",
+        "frozenHandles": [],
+        "preferencesClass": "class1"
+      }
+    },
+    {
+      "id": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "type": "COMBINE",
+      "data": {
+        "ioEngine": {
+          "targetCount": 1,
+          "sourceCount": 1,
+          "dynamicInput": true,
+          "dynamicOutput": true
+        },
+        "configParameters": { "space_character": " " },
+        "inputParameters": {
+          "value1": "string",
+          "value2": "string",
+          "int_value": "int",
+          "any_value": "any",
+          "bool_value": "boolean"
+        },
+        "outputValues": {
+          "result": "string",
+          "result2": "string",
+          "result3": "string",
+          "result4": "string"
+        },
+        "trigHandles": { "trig1": false, "trig2": true },
+        "triggerAttributes": "ignore",
+        "statusHandles": { "inputs": { "enable": true, "disable": false } },
+        "frozenHandles": [],
+        "preferencesClass": "class1"
+      }
+    },
+    {
+      "id": "NOTIFICATION-57ad5a-4de6-6f44-5a41-5dc6f1ae2a6f",
+      "type": "NOTIFICATION",
+      "data": {
+        "ioEngine": {
+          "targetCount": 1,
+          "sourceCount": 0,
+          "dynamicInput": false,
+          "dynamicOutput": false
+        },
+        "configParameters": { "message": 5, "repeat": "every 3 seconds" },
+        "inputParameters": { "value": "any" },
+        "trigHandles": { "trig1": false, "trig2": false },
+        "triggerAttributes": "ignore",
+        "statusHandles": { "inputs": { "enable": false, "disable": false } },
+        "frozenHandles": [],
+        "preferencesClass": "class1"
+      }
+    },
+    {
+      "id": "TRIGGER-552f85-008-f283-5401-a1ce4af766",
+      "type": "TRIGGER",
+      "data": {
+        "ioEngine": {
+          "targetCount": 0,
+          "sourceCount": 1,
+          "dynamicInput": false,
+          "dynamicOutput": false
+        },
+        "statusHandles": {
+          "inputs": { "enable": false, "disable": false, "clear": true },
+          "outputs": { "start": true, "end": false }
+        },
+        "configParameters": { "message": 5, "repeat: every x seconds": 3 },
+        "outputValues": { "trig": "any" },
+        "trigHandles": { "trig1": false, "trig2": true },
+        "triggerAttributes": "ignore",
+        "frozenHandles": [],
+        "preferencesClass": "class1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3d",
+      "sourceHandle": "any_trig",
+      "target": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "targetHandle": "string_value1",
+      "data": "",
+      "id": "reactflow__edge-TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3dany_trig-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82string_value1"
+    },
+    {
+      "source": "TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3d",
+      "sourceHandle": "any_trig",
+      "target": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "targetHandle": "string_value2",
+      "data": "",
+      "id": "reactflow__edge-TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3dany_trig-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82string_value2"
+    },
+    {
+      "source": "TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3d",
+      "sourceHandle": "any_trig",
+      "target": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "targetHandle": "int_int_value",
+      "data": "",
+      "id": "reactflow__edge-TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3dany_trig-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82int_int_value"
+    },
+    {
+      "source": "TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3d",
+      "sourceHandle": "any_trig",
+      "target": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "targetHandle": "any_any_value",
+      "data": "",
+      "id": "reactflow__edge-TRIGGER-7ac65-bf26-d8b-1ad4-6035f6c0c3dany_trig-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82any_any_value"
+    },
+    {
+      "source": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "sourceHandle": "string_result4",
+      "target": "NOTIFICATION-57ad5a-4de6-6f44-5a41-5dc6f1ae2a6f",
+      "targetHandle": "any_value",
+      "data": "",
+      "id": "reactflow__edge-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82string_result4-NOTIFICATION-57ad5a-4de6-6f44-5a41-5dc6f1ae2a6fany_value"
+    },
+    {
+      "source": "TRIGGER-552f85-008-f283-5401-a1ce4af766",
+      "sourceHandle": "any_trig",
+      "target": "COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82",
+      "targetHandle": "boolean_bool_value",
+      "data": "",
+      "id": "reactflow__edge-TRIGGER-552f85-008-f283-5401-a1ce4af766any_trig-COMBINE-32c6388-bef8-11c-6d7c-00ddf1c82boolean_bool_value"
+    }
+  ]
+}

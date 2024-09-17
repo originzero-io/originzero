@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "lib": ["es2021"],
+    "allowJs": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "typeRoots": ["src/types", "node_modules/@types"]
+  },
+  "include": ["src", "socket.io-logger.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

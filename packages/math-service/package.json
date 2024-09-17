@@ -1,0 +1,8 @@
+{
+  "name": "math-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd src && python3 app.py"
+  }
+}

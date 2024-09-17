@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+  cursor: url(../images/cursor.svg), move;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: #9754af !important;
+}
+
+::selection {
+  /* color: red; */
+  background: #9754af !important;
+}
+/* @font-face {
+  font-family: "Prime-Regular";
+  src:
+      url("../fonts/Prime-Regular.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Prime-Light";
+  src:
+      url("../fonts/Prime-Light.ttf")
+      format("truetype");
+} */
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Prime-Regular"; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "NunitoSans-Regular", Helvetica;
+}
+input[type="color" i] {
+  border: none;
+  box-shadow: none;
+  border-radius: 100px;
+  outline: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+
+.group-bar-icon:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+/* permission page switch color */
+.form-check-input:checked {
+  background-color: #1db954 !important;
+  border-color: #1db954 !important;
+}

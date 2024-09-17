@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    {% if latex_code %}
+        <h3>Entered LaTeX expression:</h3>
+        <p>{{ latex_code }}</p>
+        <h3>Sympy Expression:</h3>
+        <p>{{ sympy_expression }}</p>
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
