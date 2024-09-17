@@ -1,6 +1,6 @@
 name: ⭐️ Feature Request
 description: Suggest a new feature or idea for originzero low-code automation tool
-labels: feature request
+labels: ["enhancement"]
 body:
   - type: textarea
     id: description
