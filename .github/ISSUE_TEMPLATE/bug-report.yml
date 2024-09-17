@@ -59,3 +59,8 @@ body:
         If applicable, add screenshots or a video to help explain your problem.
         Supported image/file types and file size limits- https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
       placeholder: Drag your video or image files inside of this editor
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Anything else you would like to add
