@@ -2,7 +2,7 @@
 
 Hello and welcome! We're thrilled that you're considering contributing to Originzero ✨. Here's a guide on how you can get involved with the project.
 
-## Table of Contents
+## 📜 Table of Contents
 
 - [Contributing to Originzero](#contributing-to-originzero)
   - [Table of Contents](#table-of-contents)
@@ -15,7 +15,7 @@ Hello and welcome! We're thrilled that you're considering contributing to Origin
     - [Branching Strategy](#branching-strategy)
     - [Coding Standards](#coding-standards)
 
-## Our Contribution Philosophy
+## 🏛️ Our Contribution Philosophy
 
 The core team leads the direction of Originzero, deciding which features to add and which to leave out. While we guide the project, we're always open to fresh ideas and discussions. We want to hear your thoughts, and we encourage everyone to share their perspectives.
 
@@ -29,7 +29,7 @@ Contributing isn't just about writing code. Helping to spread the word about Ori
 
 Your contributions, whether through coding, brainstorming, or sharing the project with others, are what help Originzero grow. We're glad to have you with us on this journey!
 
-## Ways You Can Help
+## 🛟 Ways You Can Help
 
 Here are some of the key areas where you can contribute to the application and its community:
 
@@ -51,7 +51,7 @@ Discussing your enhancement idea with us first is the best way to ensure your pu
 
 For enhancement suggestions, feel free to email us at info@originzero.io.
 
-# Directory structure
+# 📂 Directory structure
 
 Originzero is split up in different modules which are all in a single mono repository.
 
@@ -66,9 +66,9 @@ The most important directories:
 - [/packages/dockerize-api](/packages/dockerize-api) - A package that creates a container for each flow created
 - [/packages/math-service](/packages/math-service) - Allows the Calculate node to handles complex mathematical operations
 
-## Pull Requests
+# 💫 Pull Requests
 
-If you wish to contribute by adding new features, improvements, or refactoring existing code, please discuss your ideas with us first. You can reach out via GitHub discussions, our Discord server, or email us at info@originzero.dev. This ensures your time and effort align with the project goals. We're eager to review your pull requests and collaborate with you 😊.
+If you wish to contribute by adding new features, improvements, or refactoring existing code, please discuss your ideas with us first. You can reach out via GitHub discussions, our Discord server, or email us at info@originzero.io. This ensures your time and effort align with the project goals. We're eager to review your pull requests and collaborate with you 😊.
 
 ## Branching Strategy
 
