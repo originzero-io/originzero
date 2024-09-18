@@ -6,6 +6,7 @@ Hello and welcome! We're thrilled that you're considering contributing to Origin
 
 - [Contributing to Originzero](#contributing-to-originzero)
   - [Table of Contents](#table-of-contents)
+  - [Code of Conduct](#code-of-conduct)
   - [Our Contribution Philosophy](#our-contribution-philosophy)
   - [Ways You Can Help](#ways-you-can-help)
     - [Enhancements](#enhancements)
@@ -14,6 +15,13 @@ Hello and welcome! We're thrilled that you're considering contributing to Origin
   - [Pull Requests](#pull-requests)
     - [Branching Strategy](#branching-strategy)
     - [Coding Standards](#coding-standards)
+
+## Code of Conduct
+
+This project and everyone participating in it are governed by the Code of
+Conduct which can be found in the file [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+By participating, you are expected to uphold this code. Please report
+unacceptable behavior to info@originzero.io.
 
 ## 🏛️ Our Contribution Philosophy
 
