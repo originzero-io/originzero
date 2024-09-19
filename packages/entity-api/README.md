@@ -1,9 +1,3 @@
-This service consists of:
+# /entity-api
 
-- User module
-- Organization module (short-term)
-- Workspace module
-- Flow structure module
-- Studio structure module (long-term)
-- Team module
-- Permission module
+This service is responsible for handling the database communication for all entities in the application. It manages the database interactions for data like Users, Workspaces, Projects, Flows, Permissions, and Teams.
