@@ -17,13 +17,16 @@ Check out our [wiki page](https://github.com/originzero-io/originzero/wiki/Getti
 1. Clone the code:
    
         git clone https://github.com/originzero-io/originzero.git
-        cd originzero
+        cd originzero 
 
 2. Install the dependencies
 
         npm install
+3. Install [Lerna](https://lerna.js.org/docs/introduction)
 
-3. Run
+        npm i -g lerna
+
+4. Run
    
         npm start
 5. Open
